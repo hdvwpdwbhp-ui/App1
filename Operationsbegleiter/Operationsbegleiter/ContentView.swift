@@ -17,11 +17,12 @@ struct ContentView: View {
             Text("WebView-Integration bereit")
                 .foregroundColor(.secondary)
             
-            Text("Spracheingabe: Native iOS Speech Framework")
-                .font(.footnote)
-            
-            Text("Backup-Export: UIActivityViewController")
-                .font(.footnote)
+            Group {
+                Text("Spracheingabe: Native iOS Speech Framework")
+                Text("Backup-Export: UIActivityViewController")
+            }
+            .font(.footnote)
+            .accessibilityLabel("Technische Informationen zur App-Integration")
         }
         .padding()
     }

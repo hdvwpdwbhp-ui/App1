@@ -12,9 +12,11 @@ Diese Anleitung beschreibt die Implementierung von:
 
 Fügen Sie folgende Einträge in Ihre Info.plist hinzu (über Xcode Target > Info):
 
-```
-NSSpeechRecognitionUsageDescription = "Die App verwendet Spracherkennung für die Diktatfunktion."
-NSMicrophoneUsageDescription = "Die App benötigt Mikrofonzugriff für die Spracheingabe."
+```xml
+<key>NSSpeechRecognitionUsageDescription</key>
+<string>Die App verwendet Spracherkennung für die Diktatfunktion.</string>
+<key>NSMicrophoneUsageDescription</key>
+<string>Die App benötigt Mikrofonzugriff für die Spracheingabe.</string>
 ```
 
 ### 2. Architektur-Übersicht
